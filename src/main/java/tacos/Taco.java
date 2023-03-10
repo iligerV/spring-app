@@ -17,6 +17,8 @@ import java.util.List;
 @Entity
 public class Taco {
 
+    private String newValue = "generated customly";
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
