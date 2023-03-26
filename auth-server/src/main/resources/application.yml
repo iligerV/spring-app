@@ -1,0 +1,14 @@
+server:
+  port: 9000
+  h2:
+    console:
+      enabled: true
+  datasource:
+    generate-unique-name: false
+    name: auth-server
+    url: jdbc:h2:mem:auth-server
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

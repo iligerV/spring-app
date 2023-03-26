@@ -1,0 +1,17 @@
+spring:
+  data:
+    rest:
+      base-path: /api
+  h2:
+    console:
+      enabled: true
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://authserver:9000/oauth2/jwks
+  datasource:
+    generate-unique-name: false
+    name: tacocloud
+    url: jdbc:h2:mem:tacocloud
